@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Login } from './pages/Login'
 import { Users } from './pages/Users';
-import {  UserInfo } from './pages/UserInfo';
+import {  UserChart } from './pages/UserChart';
 
 import Global from './styles/Global'
 
@@ -24,7 +24,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Login} />
           <Route path="/users" exact component={Users} />
-          <Route path="/users/:id" component={UserInfo}/>
+          <Route path="/users/:name/:id" component={UserChart}/>
         </Switch>
       </BrowserRouter>
     </>

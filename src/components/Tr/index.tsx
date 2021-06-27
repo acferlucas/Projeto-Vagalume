@@ -10,7 +10,7 @@ type User = {
 type Trprops =  {
   
   user: User
-  navigateToNewRoom: (id:number) => void
+  navigateToNewRoom: (id:number,name:string) => void
 }
 
 
@@ -19,7 +19,7 @@ export function Tr({ user,navigateToNewRoom }: Trprops){
     <MainTr>
       <td>
         {user.name}
-        <button onClick={ () => navigateToNewRoom(user.id) }>Visualizar Estatisticas</button>
+        <button onClick={ () => navigateToNewRoom(user.id, user.name) }>Visualizar Estatisticas</button>
       </td>
     </MainTr>
   )

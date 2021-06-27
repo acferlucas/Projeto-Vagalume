@@ -31,9 +31,9 @@ export function Users(){
     loadUsers()
   },[])
 
-  function navigateToNewRoom(id:number){
+  function navigateToNewRoom(id:number,name:string){
     
-    history.push(`/users/${id}`) 
+    history.push(`/users/${name}/${id}`) 
   }
   
   return (
