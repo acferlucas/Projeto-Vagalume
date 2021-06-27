@@ -12,10 +12,9 @@ export const Container = styled.div`
   img {
     max-width:6.375rem;
   }
-
+  
   div {
-    
-    margin: 5.8rem;
+    margin: 5.5rem;
     display: flex;
     flex-direction: column;
   }

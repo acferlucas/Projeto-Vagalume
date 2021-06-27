@@ -4,6 +4,7 @@ import {Aside} from '../components/aside/Aside'
 import {Container, MainTable} from '../styles/pages/Users'
 import {FiChevronDown} from 'react-icons/fi'
 import {Tr} from '../components/Tr/index'
+import { useHistory } from 'react-router-dom'
 
 
 type User = {
@@ -14,6 +15,7 @@ type User = {
 
 export function Users(){
   const [users,setUsers] = useState<User[]>([])
+  const history = useHistory()
 
   useEffect(() =>{
     
@@ -28,6 +30,11 @@ export function Users(){
 
     loadUsers()
   },[])
+
+  function navigateToNewRoom(id:number){
+    
+    history.push(`/users/${id}`) 
+  }
   
   return (
     <Container>
@@ -41,7 +48,7 @@ export function Users(){
             </tr>
           </thead>
           <tbody>
-            {users.map(user => <Tr key={user.id} user={user}/>)}
+            {users.map(user => <Tr key={user.id} user={user} navigateToNewRoom={navigateToNewRoom}/>)}
           </tbody>
         </MainTable>
       </main>

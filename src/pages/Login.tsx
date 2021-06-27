@@ -24,7 +24,7 @@ export function Login(){
 
       if(response.data.success){
         api.defaults.headers.Authorization = response.data.token
-        toast.success("Bem vindo")
+        toast.success("Login efetuado com sucesso")
         history.push('/users')
       }else {
         toast.error("Usuario ou senha incorretos")

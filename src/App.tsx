@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Login } from './pages/Login'
 import { Users } from './pages/Users';
+import {  UserInfo } from './pages/UserInfo';
+
 import Global from './styles/Global'
 
 import { ToastContainer } from 'react-toastify';
@@ -22,6 +24,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Login} />
           <Route path="/users" exact component={Users} />
+          <Route path="/users/:id" component={UserInfo}/>
         </Switch>
       </BrowserRouter>
     </>

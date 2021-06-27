@@ -10,15 +10,16 @@ type User = {
 type Trprops =  {
   
   user: User
+  navigateToNewRoom: (id:number) => void
 }
 
 
-export function Tr(props: Trprops){
+export function Tr({ user,navigateToNewRoom }: Trprops){
   return (
     <MainTr>
       <td>
-        {props.user.name}
-        <button>Visualizar Estatisticas</button>
+        {user.name}
+        <button onClick={ () => navigateToNewRoom(user.id) }>Visualizar Estatisticas</button>
       </td>
     </MainTr>
   )

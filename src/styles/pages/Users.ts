@@ -8,7 +8,7 @@ export const Container = styled.div`
     padding-left: 2.875rem;
     width: 100%;
 }
-  h1 {
+  main h1 {
     margin-top:9.8rem;
     color: #989898;
     font-family: 'Poppins';
@@ -28,6 +28,9 @@ export const MainTable = styled.table`
     font-weight: 400;
     font-size:16px;
     color: #969CB2;
+  }
+  thead th svg{
+    padding-top: 8px;
   }
   
 `;
