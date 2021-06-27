@@ -50,18 +50,18 @@ export function UserChart(){
       <Aside />
         <main>
           <Link to="/users"><FiChevronLeft size={35}/></Link>
-          <div className="main-header">
-            <div className="header-content">
-              <FiUser size={55}/>
-              <h1>{param.name}</h1>
+            <div className="main-header">
+              <div className="header-content">
+                <FiUser size={55}/>
+                <h1>{param.name}</h1>
+              </div>
             </div>
-          </div>
-          <div className="graphic-container">
-          {isloading ? 
-            <div id="loading"></div> : 
-            <Chart options={options} series={[{ name: 'series', data: values}]} type="area" height={200} />
-          }
-          </div>
+            <div className="graphic-container">
+              {isloading ? 
+                <div id="loading"></div> : 
+                <Chart options={options} series={[{ name: 'series', data: values}]} type="area" height={200} />
+              }
+            </div>
         </main>
     </Container>
   )
