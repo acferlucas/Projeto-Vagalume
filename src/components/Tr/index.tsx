@@ -1,5 +1,6 @@
 import {MainTr} from './style'
 
+
 type User = {
   
   id:number
@@ -7,8 +8,10 @@ type User = {
 }
 
 type Trprops =  {
+  
   user: User
 }
+
 
 export function Tr(props: Trprops){
   return (
@@ -18,7 +21,5 @@ export function Tr(props: Trprops){
         <button>Visualizar Estatisticas</button>
       </td>
     </MainTr>
-  
-  
   )
 }

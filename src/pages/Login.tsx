@@ -1,9 +1,10 @@
-import { useState } from 'react'
 import logoIMG from '../assets/logo.svg'
 import {Container} from '../styles/pages/Login'
-import { FormEvent } from 'react'
+import { FormEvent , useState} from 'react'
+import { toast } from 'react-toastify';
 import { api } from '../services/api'
 import { useHistory } from 'react-router-dom'
+
 
 
 export function Login(){
@@ -23,9 +24,12 @@ export function Login(){
 
       if(response.data.success){
         api.defaults.headers.Authorization = response.data.token
+        toast.success("Bem vindo")
         history.push('/users')
+      }else {
+        toast.error("Usuario ou senha incorretos")
       }
-
+      
     } catch (error) {
       console.log(error)
     }

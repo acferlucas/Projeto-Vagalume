@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 
 export const MainTr = styled.tr`
-  
-  background-color: #fff;
   height: 5rem;
-  border-radius :100px ;
 
   td {
+    background-color: #fff;
     font-size:16px;
     font-weight: 400;
     color: #363F5F;
@@ -16,7 +14,10 @@ export const MainTr = styled.tr`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 8px;
   }
+
+  
 
   button {
     height: 2.6rem;

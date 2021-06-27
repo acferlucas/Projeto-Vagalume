@@ -6,21 +6,36 @@ export const Container = styled.div`
   display:flex;
   flex-direction: column;
   align-items: center;
-  padding: 2.0625rem 2.375rem;
+  padding: 3.0625rem 2.375rem;
   background-color: #4A4B4C;
 
   img {
-    max-width:9.375rem;
+    max-width:6.375rem;
   }
+
   div {
     
-    margin: 2.8125rem;
+    margin: 5.8rem;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    justify-content: space-around;
   }
+
   svg {
     cursor: pointer;
+    color: #fff;
+    transition: 0.2s
   }
+  
+  svg:hover {
+    color: #FF9801;
+  }
+  a {
+    margin-top:2rem;
+    text-decoration:none;
+  }
+  
+  svg + svg {
+    margin-top: 2rem;
+  }
+
 `;
