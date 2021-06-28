@@ -14,10 +14,12 @@ export const Container = styled.div`
   main {
     margin-top: 6.5rem;
     border-radius: 1.5625rem;
+
     display: flex;
     flex-direction: column;
     height:32.1875rem;
     width: 29.8125rem;
+
     background-color: #fff;
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.6);
   }
@@ -41,6 +43,7 @@ export const Container = styled.div`
     p {
       font-size: 1.25rem;
       font-weight: bold;
+      
     }
     input {
       
@@ -55,6 +58,7 @@ export const Container = styled.div`
   }
   input + p {
     margin-top: 1rem;
+    
   }
   .button-area{
     
@@ -71,6 +75,10 @@ export const Container = styled.div`
     color: #fff;
     border: none;
     font-size: 18px;
+  }
+  span {
+    font-size: 10px;
+    color: #E83F5B;
   }
 
 `; 

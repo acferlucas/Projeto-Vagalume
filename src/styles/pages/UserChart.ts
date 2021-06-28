@@ -4,15 +4,13 @@ export const Container = styled.div`
   
   display: flex;
   background-color: #F0F2F5;
+  
   main {
+    margin-top:4rem;
     width: 100%;
-    padding: 2rem 2rem;
+    padding: 0rem 2rem;
   }
-  .main-header{
-    width:100%;
-    display: flex;
-    justify-content:center;
-  }
+
   @keyframes rotation { 
   100% {
     transform: rotate(360deg);
@@ -20,11 +18,11 @@ export const Container = styled.div`
 }
   #loading{
     
+    margin-top:5rem;
     width: 80px;
     height: 80px;
     position: absolute;
-    left: 52%;
-    top: 48%;
+    left: 52.5%;
     border: 6px solid;
     border-radius: 50%;
     border-color:  #F0F2F5 #000 #000 #000;
@@ -33,22 +31,25 @@ export const Container = styled.div`
     animation-iteration-count: infinite;
   }
   
-  
-  
   .graphic-container {
     margin-top: 5rem;
     width: 100%;
-    background-color: #Fff;
+    border-radius: 8px;
+    background-color: #fff;
   }
-  
+
+  .main-header{
+    width:100%;
+    display: flex;
+    justify-content:center;
+  }
   .header-content{
     background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    border-radius: 100%;
-    padding: 1.5rem;
+    text-align: center;
+    border-radius: 50%;
+    min-width: 8rem;
+    min-height: 8rem;
+    padding: 1rem;
   }
   .header-content h1 {
     
@@ -56,5 +57,6 @@ export const Container = styled.div`
     font-size:12px;
     min-width: 5rem;
   }
+  
   
 `;

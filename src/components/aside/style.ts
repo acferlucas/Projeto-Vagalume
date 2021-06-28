@@ -14,7 +14,7 @@ export const Container = styled.div`
   }
   
   div {
-    margin: 5.5rem;
+    margin: 7rem;
     display: flex;
     flex-direction: column;
   }
@@ -36,5 +36,6 @@ export const Container = styled.div`
   svg + svg {
     margin-top: 2rem;
   }
+ 
 
 `;

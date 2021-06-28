@@ -37,6 +37,7 @@ export function Users(){
   }
   
   return (
+
     <Container>
       <Aside />
       <main>
@@ -53,5 +54,6 @@ export function Users(){
         </MainTable>
       </main>
     </Container>
+    
   )
 }
