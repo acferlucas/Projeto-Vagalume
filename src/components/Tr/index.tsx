@@ -19,7 +19,7 @@ export function Tr({ user,navigateToNewRoom }: Trprops){
     <MainTr>
       <td>
         {user.name}
-        <button onClick={ () => navigateToNewRoom(user.id, user.name) }>Visualizar Estatisticas</button>
+        <button onClick={ () => navigateToNewRoom(user.id, user.name) }>Visualizar Estatísticas</button>
       </td>
     </MainTr>
   )

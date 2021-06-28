@@ -12,17 +12,18 @@ export const Container = styled.div`
   }
 
   @keyframes rotation { 
-  100% {
-    transform: rotate(360deg);
+    100% {
+      transform: rotate(360deg);
+    }
   }
-}
+
   #loading{
     
     margin-top:5rem;
     width: 80px;
     height: 80px;
     position: absolute;
-    left: 52.5%;
+    left: calc(50% - 40px);
     border: 6px solid;
     border-radius: 50%;
     border-color:  #F0F2F5 #000 #000 #000;
@@ -31,11 +32,12 @@ export const Container = styled.div`
     animation-iteration-count: infinite;
   }
   
-  .graphic-container {
+  .chart-container {
     margin-top: 5rem;
     width: 100%;
     border-radius: 8px;
     background-color: #fff;
+    position: relative;
   }
 
   .main-header{

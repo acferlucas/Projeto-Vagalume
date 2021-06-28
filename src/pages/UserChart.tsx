@@ -84,7 +84,7 @@ export function UserChart(){
                 <h1>{param.name}</h1>
               </div>
             </div>
-            <div className="graphic-container">
+            <div className="chart-container">
               {isloading ? 
                 <div id="loading"></div> : 
                 <Chart 
