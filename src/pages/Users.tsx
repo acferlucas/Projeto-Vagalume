@@ -30,9 +30,6 @@ export function Users(){
     async function loadUsers(){
 
      const response = await api.get('get_clients') 
-
-     console.log(response)
-     
      setUsers(response.data.clients)  
     }
 

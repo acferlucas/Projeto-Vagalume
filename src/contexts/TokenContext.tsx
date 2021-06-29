@@ -1,7 +1,7 @@
 import { createContext, ReactNode, useState} from "react"
 import {api} from '../services/api'
 
-type TokenContext = {
+type TokenContextType = {
   
   token: string
   doLogin: (login:string, password:string) => Promise<void>
@@ -12,7 +12,7 @@ type TokenContextProviderProps = {
   children:ReactNode
 }
 
-export const TokenContext = createContext({} as TokenContext)
+export const TokenContext = createContext({} as TokenContextType)
 
 export function TokenContextProvider(props:TokenContextProviderProps){
   

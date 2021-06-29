@@ -73,8 +73,6 @@ export function UserChart(){
       
       const response = await api.get(`get_client_data/${id}`)
       setValues(response.data.data)
-      
-      console.log('fim da requisição')
       SetIsLoading(false)
     }
     loadGraph( param.id)
