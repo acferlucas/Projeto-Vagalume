@@ -7,7 +7,11 @@ Possui componentes reutilizáveis e responsivos  que permitem que a  aplicação
 de fácil manutenção, mesmo que cresça em complexidade e tamanho. Tenho afinidade com o react pois já utilizei em outros
 projetos Esses fatores foram decisivos para minha escolha
 
+## Sobre o projeto:
 
+- Service com axios
+- Graficos com apexCharts
+- useContext para guardar token da requisição
 
 ## Tela Login
 
