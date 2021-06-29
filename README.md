@@ -25,6 +25,7 @@ projetos Esses fatores foram decisivos para minha escolha
 
 # Tecnologias utilizadas
 ## Front end
-- React typescript
-- Bibliotecas React.
+- Service com axios
+- Graficos com apexCharts
+- useContext para guardar token da requisição
 
