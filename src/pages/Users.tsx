@@ -1,21 +1,29 @@
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from 'react'
+import { useHistory } from 'react-router-dom'
+import { useToken } from '../hooks/useToken'
+
 import { api } from '../services/api'
+
 import {Aside} from '../components/aside/Aside'
 import {Container, MainTable} from '../styles/pages/Users'
-import {FiChevronDown} from 'react-icons/fi'
 import {Tr} from '../components/Tr/index'
-import { useHistory } from 'react-router-dom'
+import {FiChevronDown} from 'react-icons/fi'
 
 
 type User = {
-  
   id:number
   name: string
 }
 
 export function Users(){
+  
   const [users,setUsers] = useState<User[]>([])
   const history = useHistory()
+  const {token} = useToken()
+
+  if(!token){
+    history.push('/')
+  }
 
   useEffect(() =>{
     
@@ -37,7 +45,6 @@ export function Users(){
   }
   
   return (
-
     <Container>
       <Aside />
       <main>
@@ -54,6 +61,5 @@ export function Users(){
         </MainTable>
       </main>
     </Container>
-    
   )
 }

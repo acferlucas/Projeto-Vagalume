@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Login } from './pages/Login'
 import { Users } from './pages/Users';
 import {  UserChart } from './pages/UserChart';
@@ -11,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css'
 
 
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import { TokenContextProvider } from './contexts/TokenContext'
 
 
 function App() {
@@ -23,9 +22,11 @@ function App() {
       <Global />
       <BrowserRouter>
         <Switch>
-          <Route path="/" exact component={Login} />
-          <Route path="/users" exact component={Users} />
-          <Route path="/users/:name/:id" component={UserChart}/>
+          <TokenContextProvider>
+            <Route path="/" exact component={Login} />
+            <Route path="/users" exact component={Users} />
+            <Route path="/users/:name/:id" component={UserChart}/>
+          </TokenContextProvider>
         </Switch>
       </BrowserRouter>
     </>

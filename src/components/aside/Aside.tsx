@@ -15,5 +15,5 @@ export function Aside(){
         <Link to="/"><FiLogOut size={35}/></Link>
       </div>
     </Container>
-  )
-}
+    )
+  }
